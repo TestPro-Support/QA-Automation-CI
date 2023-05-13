@@ -8,13 +8,8 @@ import pagefactory.LoginPage;
 
 
 public class LoginTests extends BaseTest {
-
-    private static final Logger LOG = LoggerFactory.getLogger(LoginTests.class);
-
     @Test
     public void LoginValidEmailPasswordTest () {
-
-        LOG.debug("LoginValidEmailPasswordTest is running on Jenkins");
 
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = new HomePage(getDriver());
@@ -29,8 +24,6 @@ public class LoginTests extends BaseTest {
 
     @Test
     public void LoginEmptyPasswordTest () {
-
-        LOG.debug("LoginEmptyPasswordTest is running on Jenkins");
 
         LoginPage loginPage = new LoginPage(getDriver());
 
