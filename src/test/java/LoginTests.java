@@ -10,7 +10,9 @@ import java.util.logging.Logger;
 
 public class LoginTests extends BaseTest {
 
-    private static final Logger LOG = Logger.getLogger("Jenkins Message Log");
+
+
+
     @Test
     public void LoginValidEmailPasswordTest () {
 
@@ -22,6 +24,7 @@ public class LoginTests extends BaseTest {
                  .clickSubmit();
 
         Assert.assertTrue(homePage.isAvatarDisplayed());
+        System.out.println(homePage.getPlaylistName());
 
     }
 
@@ -34,7 +37,7 @@ public class LoginTests extends BaseTest {
                  .providePassword("te$t$tudent")
                  .clickSubmit();
         Assert.assertEquals(getDriver().getCurrentUrl(), url);
-
-        LOG.info("This test is run in Jenkins");
     }
+
+
 }
