@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 
 public class LoginTests extends BaseTest {
 
-    private static final Logger LOG = null;
+    private static final Logger LOG = Logger.getLogger("Jenkins Message Log");
     @Test
     public void LoginValidEmailPasswordTest () {
 
