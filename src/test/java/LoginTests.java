@@ -33,6 +33,7 @@ public class LoginTests extends BaseTest {
 
 
         Assert.assertEquals(getDriver().getCurrentUrl(), url);
+        System.out.println("This test is executed by Jenkins");
 
     }
 }
