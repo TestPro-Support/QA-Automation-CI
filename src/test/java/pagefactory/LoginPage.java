@@ -25,6 +25,7 @@ public class LoginPage extends BasePage {
     }
     public LoginPage clickSubmit() {
         click(submitBtn);
+        System.out.println("This test is executed by Jenkins");
         return this;
     }
 
